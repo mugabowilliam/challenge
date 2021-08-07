@@ -1,0 +1,111 @@
+
+body{
+    background-color: white;
+    margin: 5%;
+}
+.holder{
+    display: flex;
+    background-color: hsl(0, 0%, 97%);
+    padding: 20%;
+}
+h1{
+    text-decoration:none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+    text-align: left;
+} 
+ .info{
+    margin: 2%;
+    padding:10%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+.img{
+    margin: 12%;
+}
+.sedan{
+   background-color: #fd9a18;
+}
+.suvs{
+    background-color: #055664e5;
+}
+.luxury{
+    background-color: rgba(3, 58, 27, 0.842);
+}
+.sedan button{
+    margin: 2em;
+    border-radius: 25px;
+    padding: 5px 24px;
+    color:rgb(243, 141, 9) ;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: none;
+}
+.suvs button{
+    margin: 2em;
+    border-radius: 25px;
+    padding: 5px 24px;
+    color:#055664e5;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: none;
+}
+.luxury button{
+    margin: 2em;
+    border-radius: 25px;
+    padding: 5px 24px;
+    color:rgba(3, 58, 27, 0.842) ;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: none;
+}
+ .sedan button:hover{
+    color:black;
+    background-color: orangered;
+}
+.suvs button:hover{
+    color:black;
+    background-color: orangered;
+}
+.luxury button:hover{
+    color:black;
+    background-color: orangered;
+}
+
+@media only screen and (max-width: 600px ) {
+    .holder{
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 97%);
+        padding: 20%;
+    }  
+}
+@media only screen and (min-width: 600px) {
+    .holder{
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 97%);
+        padding: 20%;
+    } 
+}
+@media only screen and (min-width: 768px){
+    .holder{
+        display: flex;
+        flex-direction: row;
+        background-color: hsl(0, 0%, 97%);
+        padding: 20%;
+    } 
+}
+@media only screen and (min-width: 992px){
+    .holder{
+        display: flex;
+        background-color: hsl(0, 0%, 97%);
+        padding: 20%;
+    } 
+}
