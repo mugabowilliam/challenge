@@ -2,14 +2,19 @@
 body{
     background-color: white;
     margin: 5%;
+    width:100%
 }
 .holder{
     display: flex;
+    overflow: hidden;
     background-color: hsl(0, 0%, 97%);
-    padding: 20%;
+    padding: 10%;
+    width:96%s
 }
-h1{
+
+h3{
     text-decoration:none;
+    font-family: sans-serif;
     text-transform: uppercase;
     color: white;
     font-weight: bolder;
@@ -19,8 +24,9 @@ h1{
  .info{
     margin: 2%;
     padding:10%;
+    letter-spacing: .02em;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     font-size: x-large;
 }
 .img{
@@ -28,84 +34,132 @@ h1{
 }
 .sedan{
    background-color: #fd9a18;
+   width: 32%;
 }
 .suvs{
     background-color: #055664e5;
+    width: 32%;
 }
 .luxury{
     background-color: rgba(3, 58, 27, 0.842);
+    width: 32%;
 }
 .sedan button{
     margin: 2em;
     border-radius: 25px;
-    padding: 5px 24px;
-    color:rgb(243, 141, 9) ;
+    padding: 10px 24px;
+    color:white;
+    background-color: transparent;
     font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-family: sans-serif;
     text-align: center;
-    border: none;
+    border: 2px solid white;
 }
 .suvs button{
     margin: 2em;
     border-radius: 25px;
-    padding: 5px 24px;
-    color:#055664e5;
+    padding: 10px 24px;
+    color:hsl(0, 0%, 100%);
+    background-color: transparent;
     font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: bolder;
+    font-family: sans-serif;
     text-align: center;
-    border: none;
+    border: 2px solid white;
 }
 .luxury button{
     margin: 2em;
     border-radius: 25px;
-    padding: 5px 24px;
-    color:rgba(3, 58, 27, 0.842) ;
+    padding: 10px 24px;
+    background-color: transparent;
+    color:#ffffffff ;
     font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-family: sans-serif;
     text-align: center;
-    border: none;
+    border: 2px solid #ffff;
 }
- .sedan button:hover{
-    color:black;
-    background-color: orangered;
+.sedan button:hover{
+    color:white;
+    text-transform: capitalize;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgb(225, 231, 229);
 }
 .suvs button:hover{
-    color:black;
-    background-color: orangered;
+    color:white;
+    text-transform: capitalize;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgb(225, 231, 229);
 }
 .luxury button:hover{
-    color:black;
-    background-color: orangered;
+    color:white;
+    text-transform: capitalize;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgb(225, 231, 229);
 }
 
 @media only screen and (max-width: 600px ) {
+    body{
+        background-color: white;
+        margin: 5%;
+        width:100%
+    }
     .holder{
         display: flex;
         flex-direction: column;
+        overflow: hidden;
         background-color: hsl(0, 0%, 97%);
-        padding: 20%;
-    }  
+        padding: 10%;
+        width:96%s
+    }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width:768px) {
+    body{
+        background-color: white;
+        margin: 5%;
+        width:100%
+    }
     .holder{
         display: flex;
         flex-direction: column;
+        overflow: hidden;
         background-color: hsl(0, 0%, 97%);
-        padding: 20%;
-    } 
+        padding: 10%;
+        width:96%s
+    }
 }
 @media only screen and (min-width: 768px){
+    body{
+        background-color: white;
+        margin: 5%;
+        width:100%
+    }
     .holder{
         display: flex;
-        flex-direction: row;
+        overflow: hidden;
         background-color: hsl(0, 0%, 97%);
-        padding: 20%;
-    } 
+        padding: 10%;
+        width:96%s
+    }
 }
 @media only screen and (min-width: 992px){
+    body{
+        background-color: white;
+        margin: 5%;
+        width:100%
+    }
     .holder{
         display: flex;
+        overflow: hidden;
         background-color: hsl(0, 0%, 97%);
-        padding: 20%;
-    } 
+        padding: 10%;
+        width:96%s
+    }
 }
