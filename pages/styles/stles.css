@@ -79,10 +79,10 @@ width: 25%;
         background-color: hsl(0, 0%, 97%);
         margin:2%;
         padding: 12%;
-        width:97%
+        width:96%
     }
     .sedan, .suvs, .luxury {
-        width: 80%;
+        width: 70%;
         
         }
 } 
@@ -97,7 +97,7 @@ width: 25%;
         width:97%
     }
     .sedan, .suvs, .luxury {
-        width: 80%;
+        width: 75%;
         
         }
    
