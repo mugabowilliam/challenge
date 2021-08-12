@@ -1,20 +1,20 @@
 
-body{
+*{
     box-sizing: border-box;
-    background-color: white;
-    margin: 5%;
-    width:100%
+    padding: 0;
+    margin: 0;
 }
 .holder{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    background-color: hsl(0, 0%, 97%);
-    margin:2%;
-    padding: 12%;
-    width:100%
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 81%);
 }
 
 h3{
-    margin-top: -10%;
+    /* margin-top: -10%; */
     text-decoration:none;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -47,7 +47,7 @@ h3{
 
 }
 .sedan, .suvs, .luxury {
-width: 25%;
+width: calc(96% / 3);
 
 }
 .sedan button,.suvs button, .luxury button {
@@ -72,60 +72,114 @@ width: 25%;
     border: 2px solid rgb(225, 231, 229);
 }
 
- @media only screen and (max-width: 600px ) {
+   @media only screen and (max-width: 410px ) {
     .holder{
         display: flex;
         flex-direction: column;
-        background-color: hsl(0, 0%, 97%);
-        margin:2%;
-        padding: 12%;
-        width:96%
+        width: 100vw;
+        height: 100vh;
     }
-    .sedan, .suvs, .luxury {
-        width: 70%;
+    .img{
+        margin: 0.8em;
+        padding: 0;
+    }
+    .info{
+        padding:0.2em .5em;
+        letter-spacing: .02em;
+        font-size: 1em;
+    }
+    .sedan, .suvs, .luxury { 
+        width: 27em;
+        height: 17.5em;
         
         }
-} 
-
-@media only screen and (max-width:768px) {
-    .holder{
-        display: flex;
-        flex-direction: column;
-        background-color: hsl(0, 0%, 97%);
-        margin:2%;
-        padding: 12%;
-        width:97%
-    }
-    .sedan, .suvs, .luxury {
-        width: 75%;
-        
-        }
-   
-}
-   @media only screen and (min-width: 768px){
-    .holder{
-        display: flex;
-        background-color: hsl(0, 0%, 97%);
-        margin:2%;
-        padding: 12%;
-        width:97%
-    }
-    .sedan, .suvs, .luxury {
-        width: 25%;
-        
-        }
-}
+        .sedan button,.suvs button, .luxury button {
+            margin: 1em;
+            padding: 5px 12px;
+            font-size: bolder;
     
-@media only screen and (min-width: 992px){
+        }
+
+}  
+
+  @media only screen and (min-width:410px) {
+      /* doing for medium and somehow big mobile devices from 410 pxs */
     .holder{
         display: flex;
-        background-color: hsl(0, 0%, 97%);
-        margin:2%;
-        padding: 12%;
-        width:100%
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+    .img{
+        margin: 0.8em;
+        padding: 0;
+    }
+    .info{
+        padding:0.2em .5em;
+        letter-spacing: .02em;
+        font-size: 1.3em;
     }
     .sedan, .suvs, .luxury {
-        width: 25%;
+        height:20em; 
+        width: 30.59em; 
         
-        }
-}
+    }
+  }
+  @media only screen and (min-width: 700px){
+      /* tablets and small lapts */
+      .holder{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+    }
+    .sedan, .suvs, .luxury {
+        width:25em;
+        height: 45em; 
+    }
+    .info{
+        margin: 2%;
+        padding:10%;
+        letter-spacing: .02em;
+        color: white;
+        font-family: sans-serif;
+        font-size: 2em;
+    }
+  }   
+  @media only screen and (min-width: 1000px){
+      /*laptops  */
+      .holder{
+        width: 100vw;
+        height: 100vh;
+       
+    }
+    .sedan, .suvs, .luxury {
+        width: calc(96% / 3);
+    }
+    .sedan button,.suvs button, .luxury button {
+        margin: 2em;
+        border-radius: 25px;
+        padding: 10px 24px;
+    }
+    .info{
+        font-size: 2.5em;
+    }
+    .sedan button,.suvs button, .luxury button {
+        margin: 1em;
+        padding: 10px 24px;
+        font-size:2.5em;
+    }
+  } 
+  @media only screen and (min-width: 4000px){
+    .holder{
+        width: 100vw;
+        height: 100vh;
+       
+    }
+    .sedan, .suvs, .luxury {
+        width: calc(90% / 3);
+    }
+    .info{
+        font-size: 4em;
+    }
+  }
